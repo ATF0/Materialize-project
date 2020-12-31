@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="materialize\css\materialize.css">
+    <link rel="stylesheet" href="materialize/css/font/material-icons.css">
+        <title>Materialize Project</title>
+
+    <style>
+        header{
+            background:url("IMG_1892.PNG");
+            background-size: cover ;
+            background-position: center;
+            min-height: 400px;
+        }
+    </style>
+    
+</head>
+
+
+<body class="blue-grey lighten-4">
+    <header>
+        <div class="navbar-fixed scrollspy">
+            <nav class="nav-wrapper transparent z-depth-3 ">
+                <div class="container">
+                    <a href="#" class="brand-logo">Musings</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#creatives">Creative</a></li>
+                    </ul>
+                </div>
+                <form>
+                    <div class="input-field right">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search">
+                            <i class="material-icons">search</i>
+                        </label>
+                    </div>   
+                </form>
+            </nav>
+                <ul class="sidenav" id="mobile-links">
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#creatives">Creative</a></li>
+                </ul>
+               
+        </div>
+    </header>
+
+    <!-- CARD SECTION -->
+    <div  class="container scrollspy" id="videos">
+        <div class="row">
+            <div class="col s6 l4">
+                <div class="card">
+                    <div class="card-video">
+                        <video  class="responsive-video" controls >
+                            <source src="Gus Dapperton- Moodna,Once with Grace.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class=" z-depth-2 card-content">
+                        <span class="card-title">Gus Dapperton- Moodna,Once with Grace</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 l4">
+                <div class="card">
+                    <div class="card-video">
+                        <video  class="responsive-video" controls >
+                            <source src="Gus Dapperton- Moodna,Once with Grace.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class=" z-depth-2 card-content">
+                        <span class="card-title">Gus Dapperton- Moodna,Once with Grace</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 offset-s3 l4">
+                <div class="card">
+                    <div class="card-video">
+                        <video  class="responsive-video" controls >
+                            <source src="Gus Dapperton- Moodna,Once with Grace.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class=" z-depth-2 card-content">
+                        <span class="card-title">Gus Dapperton- Moodna,Once with Grace</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PARALLAX SECTION -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="IMG_1562.JPG" alt="img" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- CARD SECTION II-->
+    <div  class="container scrollspy" id="creatives">
+        <div class="row">
+            <div class="col s6 m12 l12">
+                <div class="card ">
+                    <div class="z-depth-3 card-content"> 
+                        <span class="card-title">Creative</span>
+                        <p>
+                        Dear Creative,
+                        please let me be your muse.
+                        <br>
+                        I've got some features 
+                        that could be of use.
+                        <br>
+                        Dear Creative,
+                        please let me be your muse.
+                        <br>
+                        I've got some features 
+                        that could be of use.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m12 l12">
+                <div class="card">
+                    <div class="card-image z-depth-3 responsive-img"> <img src="planets.jpeg" > </div>
+                    <div class=""> </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="page-footer blue-grey darken-4" >
+        <div class="container">
+            <div class="row">
+                <div class="col s6 l6">
+                    <h4>Where to find us?</h4>
+                    <p>Up in the sky where the birds sing for Peace
+                        <br> while the earth weeps for health and mercy.
+                    </p>
+                </div>
+            
+                <div class="col s3 l4  push-s3 push-l2">
+                    <br>
+                    <i class="large material-icons"> donut_small </i>
+                </div> 
+            </div>
+        </div>
+        <div class="footer-copyright cyan darken-4  center grey-text text-lighten-2">
+            <div class="container">
+                Designed by A.T.F
+            </div>
+        </div>
+    </footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<!-- <script src="materialize\js\materialize.min.js"></script> -->
+    <!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+<script>
+    $(document).ready(function(){
+      $(".sidenav").sidenav();
+      $(".parallax").parallax();
+      $(".scrollspy").scrollSpy();
+    }); 
+</script>
+</body>
+</html>
